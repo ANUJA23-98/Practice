@@ -4,7 +4,6 @@ package utility;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 	public class Login 
 	{
 		@Given ("^User provide browser name as \"(.*)\" and exe location as \"(.*)\"$")
@@ -15,7 +14,6 @@ import cucumber.api.java.en.When;
 	           input[1]=location;
 	         SeleniumOperations2.browserLaunch(input);	
 		}
-
 		@Given ("^User enter url as \"(.*)\"$")
 	public static void openApplication(String url) throws InterruptedException
 		{Thread.sleep(5000);
@@ -24,7 +22,7 @@ import cucumber.api.java.en.When;
 		SeleniumOperations2.openApplication(input1);
 		}
 
-	@Given("^User cancel initial Login window$")
+/*	@Given("^User cancel initial Login window$")
 	public void user_cancel_initial_Login_window() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new PendingException();
@@ -63,9 +61,9 @@ import cucumber.api.java.en.When;
 	@Then("^Application shows user profile to user$")
 	public void application_shows_user_profile_to_user() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	    throw new PendingException();*/
 	}
 
 
-	}
+	
 
